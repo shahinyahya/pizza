@@ -1,4 +1,5 @@
 import Logo from "../assets/pizzaLogo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,10 +9,26 @@ const Navbar = () => {
       </div>
       <div className="nav-menu">
         <ul>
-          <li>Home</li>
-          <li>Menu</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Link className="link" to="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/menu">
+              Menu
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/about">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/contact">
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </header>
