@@ -49,6 +49,7 @@ html {
 @media screen and (width <= 540px) {
   .header {
     position: relative;
+    padding: 0 1rem;
   }
 
   .navbar {
@@ -155,14 +156,19 @@ html {
   .hero {
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .hero-component {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
-    padding: 2rem 0.5rem;
+    padding: 2rem 2rem;
+    margin-right: 2rem;
     background-color: #121619;
     color: white;
   }
@@ -229,6 +235,16 @@ html {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (width <= 540px) {
+  .menu-list-items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+  }
+}
 /* ======================== */
 
 /* About */
@@ -334,6 +350,17 @@ textarea {
   background-color: #121619;
 }
 
+@media screen and (width <= 540px) {
+  .left-container {
+    display: none;
+  }
+
+  .form {
+    width: 300px;
+    margin-left: 2rem;
+  }
+}
+
 /* =========================== */
 
 /* Footer */
@@ -356,6 +383,11 @@ textarea {
   cursor: pointer;
 }
 
+@media screen and (width <= 540px) {
+  .social-icons {
+    font-size: 18px;
+  }
+}
 /* ============================= */
 
 /* MEDIA QUERIES */
